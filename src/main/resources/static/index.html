@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Billettregistrering</title>
+</head>
+<body>
+<h1>Registrer kinobilletter</h1>
+<form id="ticket-form">
+    <label for="film">Velg film:</label>
+    <input type="text" id="film" required>
+    <div id="film-error" class="error"></div>
+    <br>
+    <label for="antall">Antall billetter:</label>
+    <input type="number" id="antall" required>
+    <div id="antall-error" class="error"></div>
+    <br><br>
+
+    <label for="fornavn">Fornavn:</label>
+    <input type="text" id="fornavn" required>
+    <div id="navn-error" class="error"></div>
+    <br>
+    <label for="etternavn">Etternavn:</label>
+    <input type="text" id="etternavn" required>
+    <div id="navn-error" class="error"></div>
+    <br>
+    <label for="tlfnr">Telefonnr:</label>
+    <input type="text" id="tlfnr" required>
+    <div id="navn-error" class="error"></div>
+    <br>
+    <label for="epost">Epost:</label>
+    <input type="text" id="epost" required>
+    <div id="navn-error" class="error"></div>
+    <br>
+    <button type="submit">Kjøp billett</button>
+</form>
+<h2>Alle billetter</h2>
+<ul id="ticket-list"></ul>
+<button type="button" id="slett-alle-billetter">Slett alle billetter</button>
+</body>
+<script src="index.js"></script>
+</html>
